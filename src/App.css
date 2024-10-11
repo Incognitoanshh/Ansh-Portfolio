@@ -1,6 +1,7 @@
 /* Global Styles */
 body {
-  background-image: url('images\4882066.jpg'); /* Corrected image path */
+  background-image: url("/images/4882066.jpeg");
+ /* Corrected image path */
   background-size: cover; /* Ensure the background covers the whole page */
   background-position: center; /* Keep the background centered */
   background-repeat: no-repeat; /* No repetition of background */
@@ -12,12 +13,10 @@ body {
 
 /* Navbar container */
 .navbar-container {
-  
-  background-color: #007bff00;
-  color: #ffffff00;
-  padding-top: 60px; /* Apply padding to the content, not the body */
+  background-color: transparent; /* Transparent background */
+  color: transparent; /* Transparent text */
+  padding-top: 60px; /* Apply padding to the content */
 }
-
 
 /* Container for App */
 .app-container {
@@ -27,7 +26,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
   backdrop-filter: blur(10px); /* Blur effect for background */
 }
 
@@ -67,19 +66,19 @@ body {
 .footer {
   padding: 40px; /* Padding around sections */
   text-align: center; /* Center text */
-  border-radius: 10px;
-  background-color: #33333300;
-  color: #ffffff00;/* Rounded corners */
+  border-radius: 10px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
 }
 
 /* About Section Styles */
 .about-section {
-  background-color: rgba(0, 0, 0, 0); /* Dark background for contrast */
-  color: rgb(255, 255, 255); /* Set text color to white */
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  color: #ffffff; /* White text color */
 }
 
 .about-section h2 {
-  color: rgb(255, 255, 255); /* Ensure section header is white */
+  color: #ffffff; /* Ensure section header is white */
   margin-bottom: 20px; /* Spacing below header */
   font-size: 2.5rem; /* Adjust header font size */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for header */
@@ -88,6 +87,7 @@ body {
 /* Skills Section Styles */
 .skills-section {
   background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+  color: #333; /* Dark text */
 }
 
 .skills-section h2 {
@@ -123,47 +123,12 @@ body {
 
 /* Footer Styles */
 .footer {
-  background-color: rgba(241, 241, 241, 0); /* Dark background for contrast */
-  color: rgba(21, 1, 1, 0); /* Set text color to white */
+  background-color: rgba(241, 241, 241, 0); /* Transparent background */
+  color: white; /* White text color */
   text-align: center; /* Center text */
   padding: 20px; /* Padding around the footer */
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .about-section,
-  .skills-section,
-  .projects-section,
-  .footer {
-    padding: 20px; /* Less padding on mobile */
-  }
-
-  .about-section h2,
-  .projects-section h2 {
-    font-size: 2rem; /* Adjust header font size for mobile */
-  }
-
-  .nav-link {
-    padding: 8px 15px; /* Smaller padding on mobile */
-  }
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-.dark-mode .card {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode .btn-light {
-  background-color: #060101f3;
-  color: white;
-}
-
-/* Achievements Section Styles */
 .achievements-section {
   padding: 40px;
   display: flex;
@@ -179,7 +144,7 @@ body.dark-mode {
 
 .achievement-row {
   background-color: rgba(255, 255, 255, 0.1); /* Light background for rows */
-  color: white; /* White color for text */
+  color: white; /* White text */
 }
 
 .achievement-logo {
@@ -199,8 +164,39 @@ body.dark-mode {
   color: #ffffff; /* White color for achievement details */
 }
 
-/* Responsive Achievements Section */
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .btn-light {
+  background-color: #060101f3;
+  color: white;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .footer {
+    padding: 20px; /* Less padding on mobile */
+  }
+
+  .about-section h2,
+  .projects-section h2 {
+    font-size: 2rem; /* Adjust header font size for mobile */
+  }
+
+  .nav-link {
+    padding: 8px 15px; /* Smaller padding on mobile */
+  }
+
   .achievement-row {
     color: white; /* Keep text white on mobile */
   }
@@ -216,8 +212,4 @@ body.dark-mode {
   .achievement-text p {
     font-size: 0.9rem; /* Adjust font size for mobile */
   }
-  .section-header {
-    color: white; /* Set the header color to white */
-  }
-  
 }

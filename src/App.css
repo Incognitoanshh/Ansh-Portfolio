@@ -1,0 +1,223 @@
+/* Global Styles */
+body {
+  background-image: url('C:\Users\amrit\Desktop\reactanshh\chapter4\public\images\4882066.jpg'); /* Corrected image path */
+  background-size: cover; /* Ensure the background covers the whole page */
+  background-position: center; /* Keep the background centered */
+  background-repeat: no-repeat; /* No repetition of background */
+  color: #333; /* Default text color */
+  font-family: 'Arial', sans-serif; /* Font family */
+  margin: 0; /* Remove any default margins */
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+}
+
+/* Navbar container */
+.navbar-container {
+  
+  background-color: #007bff00;
+  color: #ffffff00;
+  padding-top: 60px; /* Apply padding to the content, not the body */
+}
+
+
+/* Container for App */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack child components vertically */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+}
+
+.nav-link {
+  color: #5a84b1; /* Link color */
+  padding: 10px 20px; /* Padding around links */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid transparent; /* Initial border */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transition */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.nav-link:hover {
+  background-color: rgb(0, 123, 255); /* Light background on hover */
+  color: #869bb3; /* Keep text color on hover */
+  border-color: #007bff; /* Change border color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.nav-link.active {
+  background-color: rgba(0, 123, 255, 0.3); /* Active link background */
+  color: #ffffff; /* Active link text color */
+}
+
+.shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.fixed-top {
+  z-index: 1030; /* Keep navbar above other content */
+}
+
+/* Section Styles */
+.about-section,
+.skills-section,
+.projects-section,
+.footer {
+  padding: 40px; /* Padding around sections */
+  text-align: center; /* Center text */
+  border-radius: 10px;
+  background-color: #33333300;
+  color: #ffffff00;/* Rounded corners */
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: rgba(0, 0, 0, 0); /* Dark background for contrast */
+  color: rgb(255, 255, 255); /* Set text color to white */
+}
+
+.about-section h2 {
+  color: rgb(255, 255, 255); /* Ensure section header is white */
+  margin-bottom: 20px; /* Spacing below header */
+  font-size: 2.5rem; /* Adjust header font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for header */
+}
+
+/* Skills Section Styles */
+.skills-section {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+}
+
+.skills-section h2 {
+  color: #333; /* Darker header color */
+  margin-bottom: 20px; /* Spacing below header */
+}
+
+.skill {
+  margin: 10px; /* Space around each skill item */
+  display: inline-block; /* Align items horizontally */
+  padding: 10px 20px; /* Padding for skills */
+  border: 1px solid #007bff; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling and shadow */
+}
+
+.skill:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Add shadow on hover */
+}
+
+/* Projects Section Styles */
+.projects-section {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+  color: white; /* Set text color to white */
+}
+
+.projects-section h2 {
+  color: white; /* White color for header */
+  margin-bottom: 20px; /* Spacing below header */
+  font-size: 2.5rem; /* Adjust header font size */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: rgba(241, 241, 241, 0); /* Dark background for contrast */
+  color: rgba(21, 1, 1, 0); /* Set text color to white */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding around the footer */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .footer {
+    padding: 20px; /* Less padding on mobile */
+  }
+
+  .about-section h2,
+  .projects-section h2 {
+    font-size: 2rem; /* Adjust header font size for mobile */
+  }
+
+  .nav-link {
+    padding: 8px 15px; /* Smaller padding on mobile */
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .btn-light {
+  background-color: #060101f3;
+  color: white;
+}
+
+/* Achievements Section Styles */
+.achievements-section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Add some spacing between achievements */
+}
+
+.achive-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white; /* Set text color to white */
+}
+
+.achievement-row {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for rows */
+  color: white; /* White color for text */
+}
+
+.achievement-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.achievement-text h3 {
+  font-size: 1.5rem;
+  color: #ffffff; /* White color for achievement title */
+  margin-bottom: 10px;
+}
+
+.achievement-text p {
+  font-size: 1rem;
+  color: #ffffff; /* White color for achievement details */
+}
+
+/* Responsive Achievements Section */
+@media (max-width: 768px) {
+  .achievement-row {
+    color: white; /* Keep text white on mobile */
+  }
+
+  .achievement-logo {
+    margin-bottom: 15px;
+  }
+
+  .achievement-text h3 {
+    font-size: 1.3rem; /* Adjust font size for mobile */
+  }
+
+  .achievement-text p {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+  .section-header {
+    color: white; /* Set the header color to white */
+  }
+  
+}

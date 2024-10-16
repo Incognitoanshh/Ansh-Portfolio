@@ -10,8 +10,8 @@ const Achive = () => {
         Achievements
       </h2>
 
-      <table className="achive-table">
-        <thead>
+      <table className="table table-striped achive-table">
+        <thead className="thead-dark">
           <tr>
             <th></th>
             <th>Achievement</th>
@@ -27,6 +27,7 @@ const Achive = () => {
                 src="/images/download.png" // Placeholder for Microsoft Logo
                 alt="Microsoft Logo"
                 className="achievement-logo"
+                width="50" // Adjust size as needed
               />
             </td>
             <td>🏆 Build a Natural Language Processing Solution</td>
@@ -36,7 +37,7 @@ const Achive = () => {
                 href="/Nlp.pdf" // Link to the NLP Certificate PDF
                 target="_blank"
                 rel="noopener noreferrer"
-                className="certificate-link"
+                className="btn btn-link certificate-link"
               >
                 View Certificate
               </a>
@@ -50,6 +51,7 @@ const Achive = () => {
                 src="/images/download.jpeg" // Placeholder for Infosys Logo
                 alt="Infosys Logo"
                 className="achievement-logo"
+                width="50" // Adjust size as needed
               />
             </td>
             <td>🔍 Infosys: Exploratory Data Analysis</td>
@@ -59,7 +61,7 @@ const Achive = () => {
                 href="/amritanshucertificate.pdf" // Link to Infosys Certificate PDF
                 target="_blank"
                 rel="noopener noreferrer"
-                className="certificate-link"
+                className="btn btn-link certificate-link"
               >
                 View Certificate
               </a>
@@ -73,6 +75,7 @@ const Achive = () => {
                 src="/images/Microsoft_Azure.svg.png" // Placeholder for Azure Logo
                 alt="Azure Fundamentals"
                 className="achievement-logo"
+                width="50" // Adjust size as needed
               />
             </td>
             <td>🎓 Microsoft Certified: Azure Fundamentals</td>
@@ -82,7 +85,7 @@ const Achive = () => {
                 href="/Microsofr Azure.pdf" // Link to the Azure Fundamentals Certificate PDF
                 target="_blank"
                 rel="noopener noreferrer"
-                className="certificate-link"
+                className="btn btn-link certificate-link"
               >
                 View Certificate
               </a>
@@ -96,6 +99,7 @@ const Achive = () => {
                 src="/images/Microsoft_Azure.svg.png" // Placeholder for Azure AI Logo
                 alt="Azure AI Fundamentals"
                 className="achievement-logo"
+                width="50" // Adjust size as needed
               />
             </td>
             <td>🎓 Microsoft Certified: Azure AI Fundamentals</td>
@@ -105,7 +109,31 @@ const Achive = () => {
                 href="/Microsoft AI F.pdf" // Link to the Azure AI Fundamentals Certificate PDF
                 target="_blank"
                 rel="noopener noreferrer"
-                className="certificate-link"
+                className="btn btn-link certificate-link"
+              >
+                View Certificate
+              </a>
+            </td>
+          </tr>
+
+          {/* ReactJS by Scaler */}
+          <tr className="achievement-row">
+            <td>
+              <img
+                src="/images/react_logo.png" // Path to the React Logo
+                alt="React Logo"
+                className="achievement-logo"
+                width="50" // Adjust size as needed
+              />
+            </td>
+            <td>⚛️ ReactJS Certification by Scaler</td>
+            <td>Completed ReactJS course from Scaler.</td>
+            <td>
+              <a
+                href="/reactjs.pdf" // Link to the ReactJS Certificate PDF
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-link certificate-link"
               >
                 View Certificate
               </a>

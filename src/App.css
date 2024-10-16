@@ -1,12 +1,12 @@
 /* Global Styles */
 body {
   background-image: url("/images/4882066.jpeg");
- /* Corrected image path */
+  /* Corrected image path */
   background-size: cover; /* Ensure the background covers the whole page */
   background-position: center; /* Keep the background centered */
   background-repeat: no-repeat; /* No repetition of background */
   color: #333; /* Default text color */
-  font-family: 'Arial', sans-serif; /* Font family */
+  font-family: "Arial", sans-serif; /* Font family */
   margin: 0; /* Remove any default margins */
   min-height: 100vh; /* Ensures the background covers the entire viewport height */
 }
@@ -35,7 +35,8 @@ body {
   padding: 10px 20px; /* Padding around links */
   border-radius: 5px; /* Rounded corners */
   border: 2px solid transparent; /* Initial border */
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transition */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s,
+    transform 0.3s; /* Smooth transition */
   text-transform: uppercase; /* Uppercase text */
 }
 
@@ -86,7 +87,12 @@ body {
 
 /* Skills Section Styles */
 .skills-section {
-  background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Light background for contrast */
   color: #333; /* Dark text */
 }
 

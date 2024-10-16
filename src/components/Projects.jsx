@@ -20,7 +20,7 @@ const projectsData = [
         style={{ color: "#3C8DBC" }}
       />
     ),
-    downloadLink: "/Sentimental-Analysis-main.zip",
+    downloadLink: "/public/Sentimental-Analysis-main.zip",
   },
   {
     title: "Pinterest Automation with Selenium",
@@ -30,7 +30,7 @@ const projectsData = [
     icon: (
       <FontAwesomeIcon icon={faTasks} size="3x" style={{ color: "#FF7F50" }} />
     ),
-    downloadLink: "/Pinterest-Selenium-testing-main.zip",
+    downloadLink: "/public/Pinterest-Selenium-testing-main.zip",
   },
   {
     title: "Credit Card Scraper",
@@ -40,7 +40,21 @@ const projectsData = [
     icon: (
       <FontAwesomeIcon icon={faCode} size="3x" style={{ color: "#FFD700" }} />
     ),
-    downloadLink: "/CC-Scrappers-main.zip",
+    downloadLink: "/public/CC-Scrappers-main.zip",
+  },
+  {
+    title: "IMDb Clone",
+    description:
+      "An IMDb clone app that allows users to browse and discover trending movies, complete with detailed movie cards and a responsive design.",
+    technology: "React.js",
+    icon: (
+      <FontAwesomeIcon
+        icon={faClipboardCheck}
+        size="3x"
+        style={{ color: "#FFD700" }}
+      />
+    ),
+    downloadLink: "/public/imdb_clone_movie-main.zip",
   },
   {
     title: "To-Do List Application",
@@ -50,7 +64,7 @@ const projectsData = [
     icon: (
       <FontAwesomeIcon icon={faTasks} size="3x" style={{ color: "#32CD32" }} />
     ),
-    downloadLink: "/to-do-list-main.zip",
+    downloadLink: "/public/to-do-list-main.zip",
   },
   {
     title: "Instagram Automation Master",
@@ -64,11 +78,16 @@ const projectsData = [
         style={{ color: "#E1306C" }}
       />
     ),
-    downloadLink: "/Instagram-automation-main.zip",
+    downloadLink: "/public/Instagram-automation-main.zip",
   },
 ];
 
 const Projects = () => {
+  const handleDownload = (link) => {
+    // Navigate to the download link
+    window.location.href = link;
+  };
+
   return (
     <Container id="projects" className="my-5">
       <h2 className="section-header text-center" style={{ color: "white" }}>
@@ -98,9 +117,13 @@ const Projects = () => {
               <td>{project.description}</td>
               <td>{project.technology}</td>
               <td className="text-center">
-                <a href={project.downloadLink} download>
-                  <Button variant="primary">Download</Button>
-                </a>
+                <Button
+                  variant="primary"
+                  onClick={() => handleDownload(project.downloadLink)}
+                  aria-label={`Download ${project.title}`}
+                >
+                  Download
+                </Button>
               </td>
             </tr>
           ))}
